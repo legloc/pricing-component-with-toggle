@@ -63,14 +63,14 @@ h1, h2, h3, h4, h5, h6
     width: 100%
 
   &::before
-    background: url('./images/bg-bottom.svg') left no-repeat
+    background: url('./images/bg-bottom.svg') bottom left no-repeat
     background-size: contain
     bottom: 0
     left: 0
     height: 30%
 
   &::after
-    background: url('./images/bg-top.svg') right no-repeat
+    background: url('./images/bg-top.svg') top right no-repeat
     background-size: contain
     top: 0
     right: 0
@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6
   &.active
     background: $gradient
     border-radius: 15px
-
     padding: 60px 30px
 
     .card-title, .card-price, .list .list-item
@@ -180,3 +179,17 @@ h1, h2, h3, h4, h5, h6
       background: #ffffff
       border: 1px $primary solid
       color: $primary
+
+@media (max-width: 870px)
+  .cards-wrapper
+    flex-direction: column
+
+    .card
+      border-radius: 15px
+      margin-bottom: 30px
+
+      &.active
+        padding: 30px
+
+      .card-price
+        font-size: 4em
