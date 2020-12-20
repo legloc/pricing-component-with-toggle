@@ -1,8 +1,8 @@
 const Checkbox = () => {
   return (
-    <label className="checkboxWrapper">
-      <input className="checkboxInput" type="checkbox" />
-      <div className="checkboxSlider"></div>
+    <label className="checkbox-wrapper">
+      <input className="checkbox-input" type="checkbox" />
+      <div className="checkbox-slider"></div>
     </label>
   )
 }

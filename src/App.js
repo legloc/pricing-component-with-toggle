@@ -1,4 +1,5 @@
 import Checkbox from './components/Checkbox'
+import Card from './components/Card'
 import './App.sass'
 
 const App = () => {
@@ -9,6 +10,11 @@ const App = () => {
         <span className="payment-title">Annually</span>
         <Checkbox />
         <span className="payment-title">Monthly</span>
+      </div>
+      <div className="cards-wrapper">
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   )
