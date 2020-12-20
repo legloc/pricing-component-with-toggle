@@ -102,9 +102,36 @@ h1, h2, h3, h4, h5, h6
   background: #ffffff
   width: 100%
   height: auto
-  border-radius: 15px
   padding: 30px
   text-align: center
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+
+  &:first-child
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+
+  &:last-child
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+
+  &.active
+    background: $gradient
+    border-radius: 15px
+
+    padding: 60px 30px
+
+    .card-title, .card-price, .list .list-item
+      color: #ffffff
+
+    .card-btn
+      background: #ffffff
+      border: 1px #ffffff solid
+      color: $primary
+
+      &:hover
+        background: $gradient
+        border: 1px #ffffff solid
+        color: #ffffff
 
   .card-title
     margin-bottom: 15px
@@ -144,7 +171,7 @@ h1, h2, h3, h4, h5, h6
     text-transform: uppercase
     color: $veryLightGrayishBlue
     padding: 15px
-    border: 1px transparent solid
+    border: 1px #ffffff solid
     border-radius: 5px
     transition: all .2s ease-in-out
     cursor: pointer
