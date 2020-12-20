@@ -40,6 +40,10 @@ const App = () => {
           <Card key={ card.title } title={ card.title } price={ !monthlyPricing ? card.price[0] : card.price[1] } list={ card.list } active={ card.active } />
         )) }
       </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/legloc" rel="noreferrer" target="_blank">Aliiev Akhtem</a>.
+      </div>
     </div>
   )
 }
