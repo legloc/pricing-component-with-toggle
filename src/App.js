@@ -2,8 +2,8 @@ import './App.sass'
 
 const App = () => {
   return (
-    <div>
-      <h2>Hello world</h2>
+    <div className="wrapper">
+      <h1 className="wrapper-title">Our pricing</h1>
     </div>
   )
 }
