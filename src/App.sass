@@ -17,6 +17,37 @@ body
 h1, h2, h3, h4, h5, h6
   margin: 0
 
+.checkboxWrapper
+  .checkboxSlider
+    position: relative
+    width: 50px
+    height: 30px
+    border-radius: 100px
+    background: hsl(236, 72%, 79%)
+    background: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%)
+    transition: all .1s ease-in-out
+    cursor: pointer
+
+    &:hover
+      filter: brightness(1.2)
+
+    &::before
+      content: ''
+      position: absolute
+      top: 4px
+      left: 4px
+      width: 22px
+      height: 22px
+      background: #ffffff
+      border-radius: 50%
+      transition: all .1s ease-in-out
+
+  .checkboxInput
+    display: none
+
+    &:checked ~ .checkboxSlider::before
+      left: 24px
+
 .wrapper
   position: relative
   width: 100%
@@ -46,3 +77,14 @@ h1, h2, h3, h4, h5, h6
   .wrapper-title
     color: $grayishBlue
     text-align: center
+
+.payment-switcher
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin: 30px
+
+  .payment-title
+    color: $lightGrayishBlue
+    margin: 0 30px
